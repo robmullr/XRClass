@@ -14,11 +14,14 @@
       <!-- add a box to our scene. move to left, move it up to be on floor, rotate it, and set the color-->
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <!-- TASK 1: Add a blue box to the right-->
-      <a-box position="1 0.5 -3" rotation="0 45 0" color="#0000FF"></a-box>
+      <a-box position="1 0.5 -3" rotation="0 45 0" color="#0011FF"></a-box>
       <!-- TASK 2: Add a light above-->
-      <a-light position="0 5 0" color="yellow" type="point"></a-light>
+      <a-light position="0 3 -3" type="point"></a-light>
       <!-- TASK 3: Add Walls to the scene-->
-      <a-box position="0 2 0" rotation="0 0 0" color="#CCCCCC" scale="10"
+      <a-box position="0 5 0" rotation="0 0 0" color="gray" scale="10 10 10" side="back"></a-box>
       <!-- TASK 4: add gaze to a box in back-->
+      <a-box position="0 0.5 -4" rotation="0 0 0" color="#4CC3D9"
+      event-set_enter="_event: mouseenter; color: #FFFFFF"
+      event-set_leave="_event: mouseleave; color: #4CC3D9"></a-box>
     </a-scene>
   </body>
